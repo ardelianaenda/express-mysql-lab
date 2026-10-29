@@ -20,9 +20,9 @@ Proyek ini merupakan implementasi praktikum integrasi aplikasi web menggunakan E
 
 | ID Uji | Fitur / Operasi | Target Endpoint URL | HTTP Method | Skenario Pengujian | Hasil yang Diharapkan | Status | Bukti Tangkapan Layar |
 |---|---|---|---|---|---|---|---|
-| TC-01 | Koneksi Pool | App Startup | - | Server dijalankan pertama kali | Terhubung ke MySQL Pool tanpa error | Pass | `docs/screenshots/01-db-pool-connection.png` |
-| TC-02 | Read (All) | `/produk` | GET | Akses halaman daftar produk | Menampilkan seluruh record tabel MySQL ke antarmuka EJS | Pass | `docs/screenshots/02-read-select-render.png` |
-| TC-03 | Create | `/produk/tambah` | POST | Submit formulir produk baru | Data tersimpan di database, DevTools mencatat 302 Redirect ke `/produk` | Pass | `docs/screenshots/03-create-insert-prg.png` |
-| TC-04 | Update | `/produk/edit/:id` | POST | Mengubah harga dan stok produk | Nilai kolom pada baris MySQL berubah sesuai input baru | Pass | `docs/screenshots/04-update-param-redirect.png` |
-| TC-05 | Delete | `/produk/hapus/:id` | POST | Eksekusi tombol hapus | Baris record terhapus dari MySQL dan UI ter-refresh | Pass | `docs/screenshots/05-delete-feedback.png` |
-| TC-06 | Keamanan | `/uji-keamanan` | GET | Input `' OR '1'='1` melalui URL | Prepared Statement memperlakukan input sebagai literal string (No Injection) | Pass | `docs/screenshots/06-sql-injection-mitigation.png` |
+| TC-01 | Koneksi Pool | App Startup | - | Server dijalankan pertama kali | Terhubung ke MySQL Pool tanpa error | Pass | ![TC-01](docs/screenshots/01-db-pool-connection.png) |
+| TC-02 | Read (All) | `/produk` | GET | Akses halaman daftar produk | Menampilkan seluruh record tabel MySQL ke antarmuka EJS | Pass | ![TC-02](docs/screenshots/02-read-select-render.png) |
+| TC-03 | Create | `/produk/tambah` | POST | Submit formulir produk baru | Data tersimpan di database, DevTools mencatat 302 Redirect ke `/produk` | Pass | ![TC03](docs/screenshots/03-create-insert-prg.png) |
+| TC-04 | Update | `/produk/edit/:id` | POST | Mengubah harga dan stok produk | Nilai kolom pada baris MySQL berubah sesuai input baru | Pass | ![TC-04](docs/screenshots/04-update-param-redirect.png) |
+| TC-05 | Delete | `/produk/hapus/:id` | POST | Eksekusi tombol hapus | Baris record terhapus dari MySQL dan UI ter-refresh | Pass | ![TC-05](docs/screenshots/05-delete-feedback.png) |
+| TC-06 | Keamanan | `/uji-keamanan` | GET | Input `' OR '1'='1` melalui URL | Prepared Statement memperlakukan input sebagai literal string (No Injection) | Pass | ![TC-06](docs/screenshots/06-sql-injection-mitigation.png) |
